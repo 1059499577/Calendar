@@ -251,7 +251,8 @@
 				TargetAttributes = {
 					286240E51E8907EF007B38E0 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = J56NWSKHS7;
+						ProvisioningStyle = Manual;
 					};
 					286240FE1E8907EF007B38E0 = {
 						CreatedOnToolsVersion = 8.0;
@@ -474,10 +475,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J56NWSKHS7;
 				INFOPLIST_FILE = "日历/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "XM.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "91e6ccac-da55-4367-b2f8-2619a15dac68";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev_Profile;
 			};
 			name = Debug;
 		};
@@ -485,10 +490,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J56NWSKHS7;
 				INFOPLIST_FILE = "日历/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "XM.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "91e6ccac-da55-4367-b2f8-2619a15dac68";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev_Profile;
 			};
 			name = Release;
 		};

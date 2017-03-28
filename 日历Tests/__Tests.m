@@ -19,14 +19,28 @@
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
+- (NSInteger)getQingMingDayWithYear:(NSInteger)year {
+    NSInteger Y = year % 100;
+    NSInteger tmpC = year / 10000;
+    float C = tmpC == 1?5.59:4.81;
+    float D = 0.2422;
+    NSInteger L = (year % 1000) / 4;
+    NSInteger day = (Y * D + C) - L;
+    return day;
+}
+
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    NSInteger day = [self getQingMingDayWithYear:2020];
+    
+    XCTAssertEqual(day, 4);
+    
+    
 }
 
 - (void)testPerformanceExample {
