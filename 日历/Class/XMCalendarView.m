@@ -30,6 +30,7 @@
         self.layer.cornerRadius = 10;
         self.layer.masksToBounds = YES;
         self.dataSourceModel = [self.calendarManager currentMonth];
+        self.topTitleLabel.text = self.dataSourceModel.topTitle;
         [self.collectionView registerNib:[UINib nibWithNibName:@"XMCalendarCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"XMCalendarCell"];
         self.collectionView.delegate = self;
         self.collectionView.dataSource = self;
